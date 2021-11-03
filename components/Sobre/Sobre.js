@@ -1,4 +1,4 @@
-import dedimar from '../public/dedimar.jpg';
+import dedimar from '../../public/dedimar.jpg';
 import Image from  'next/image';
 
 function Sobre() {

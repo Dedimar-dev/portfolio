@@ -1,6 +1,6 @@
-import github_light from '../public/github-light.svg';
-import linkedin_light from '../public/linkedin-light.svg';
-import gmail2 from '../public/gmail2.png';
+import github_light from '../../public/github-light.svg';
+import linkedin_light from '../../public/linkedin-light.svg';
+import gmail2 from '../../public/gmail2.png';
 import Image from 'next/image';
 import Link from 'next/link';
 

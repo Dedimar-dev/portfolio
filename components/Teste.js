@@ -23,16 +23,6 @@ function Teste() {
         <nav>
             <ul className="section-list">
             <li>
-                <Link href="/">
-                    <Image width={30} height={30} src={ maleta } alt="maleta" />
-                </Link>
-            </li>
-            <li>
-                <Link href="/">
-                    <Image width={30} height={30} src={ qualificacoes } alt="qualificações" />
-                </Link>
-            </li>
-            <li>
                 <Link href="https://github.com/Dedimar-dev">
                     <Image width={30} height={30} src={ github_light } alt="github" />
                 </Link>
@@ -52,6 +42,7 @@ function Teste() {
 
 
         <div className="titulo">
+          
             <div className="titulo-apresentacao">
                
                 <h1>
@@ -61,7 +52,7 @@ function Teste() {
                 <Link className="color-white" href="#sobre">
                     <button className="btns">Sobre mim</button>
                 </Link>
-            </div>
+            </div>  
         </div>
 
     </div>

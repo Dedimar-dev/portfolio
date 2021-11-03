@@ -14,7 +14,6 @@ a {
 
 body {
   background: linear-gradient(rgba(15, 18, 40),rgba(15, 18, 40),rgba(15, 18, 60),rgb(15, 18, 34));
-  /* overflow-x: hidden; */
 }
 
 .conteiner {
@@ -258,7 +257,7 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
 
-  background: linear-gradient(rgb(255, 252, 260),rgb(15, 18, 30)) ;
+  background: linear-gradient(rgb(182, 182, 182),rgb(15, 18, 30)) ;
 
   font-size: 20px;
 
@@ -320,8 +319,6 @@ body::-webkit-scrollbar-thumb {
   bottom: 10px;
   left: 360px;
 }
-
-/*******************Home***************************/
 
 
 .conteiner_2 {
@@ -420,16 +417,21 @@ body::-webkit-scrollbar-thumb {
   align-items: flex-end;
 
   height: 500px;
-  width: 500px;
+  width: 1000px;
 
   color: #fff;
 
   font-size: 20px;
 
-  margin-left: 200px;
+  margin-left: 50px;
   margin-bottom: 200px;
+  margin-top: 100px;
 
   border-radius: 5px;
+
+  background: linear-gradient(rgb(15, 18, 45,0.9),rgba(93, 107, 230, 0),rgb(15, 18, 45,0.9)), url("../public/pexels-luis-gomes-546819.jpg") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .titulo a:hover {
