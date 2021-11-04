@@ -22,15 +22,15 @@ function Footer() {
             </ul>
             </nav>
             <nav className="footer-redes">
-                <Link href="https://github.com/Dedimar-dev" >
+                <a href="https://github.com/Dedimar-dev" >
                     <Image width={30} height={30} src={ github_light } alt="github" />
-                </Link>
-                <Link href="https://www.linkedin.com/in/dedimar-santos-3bba211b7/" >
+                </a>
+                <a href="https://www.linkedin.com/in/dedimar-santos-3bba211b7/" >
                     <Image width={30} height={30} src={ linkedin_light } alt="linkedin" />
-                </Link>
-                <Link href="mailto:santos.dedimar@gmail.com?subject=Olá Dedimar," >
+                </a>
+                <a href="mailto:santos.dedimar@gmail.com?subject=Olá Dedimar," >
                     <Image width={30} height={30} src={ gmail2 } alt="gemail" />
-                </Link>
+                </a>
             </nav>
         </footer>
     )

@@ -4,7 +4,7 @@ import Image from  'next/image';
 function Sobre() {
     return(
         <section className="conteiner_2 sobre">
-        <h1 id="sobre" className="titulo-sobre-mim">Sobre mim</h1>
+        <h1 className="titulo-sobre-mim">Sobre mim</h1>
 
         <div className=" apresentacao">
 
