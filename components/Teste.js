@@ -40,7 +40,7 @@ function Teste({ handleMostrarSobre, mostrar}) {
                     <button  
                         onClick={ handleMostrarSobre } 
                         className="btns btns_sobre">
-                        Sobre Mim
+                        {mostrar? 'Menos sobre Mim':'Mais sobre Mim'}
                         <Image src={mostrar? seta1: seta2} alt={mostrar? 'Mostrar' : 'Esconder' }/>
                     </button>
                 </div>  
