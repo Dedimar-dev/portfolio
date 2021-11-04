@@ -1,8 +1,4 @@
-import maleta from '../../public/maleta-de-escritorio.png';
-import home from '../../public/PCB_Heaven.png';
-import qualificacoes from '../../public/qualificacoes.png';
-import Image from 'next/image';
-import Link from 'next/link'
+import Link from 'next/link';
 
 function Header() {
     return(
