@@ -4,7 +4,7 @@ import gmail2 from '../public/gmail2.png';
 import linkedin_light from '../public/linkedin-light.svg';
 import seta1 from '../public/Polygon3.svg';
 import seta2 from '../public/Polygon5.svg';
-import dedimar from '../public/dedimar2.svg';
+import dedimar from '../public/dedimar.png';
 
 function Teste({ handleMostrarSobre, mostrar}) {
    
