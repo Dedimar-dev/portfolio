@@ -45,7 +45,7 @@ function Teste({ handleMostrarSobre, mostrar}) {
 
                 
             </div>
-           <Image src={dedimar}></Image>
+           <Image src={dedimar} alt="Dedimar"></Image>
         </div>  
         
     )
