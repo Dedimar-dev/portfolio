@@ -383,7 +383,7 @@ body::-webkit-scrollbar-thumb {
   opacity: 80%;
   border-radius: 10px;
 
-  background-image: url("../public/dedimar2.svg");
+  background-image: url("../public/dedimar2.png");
   background-color:#8C98dd;
   background-repeat: no-repeat;
   background-size: 50%;
