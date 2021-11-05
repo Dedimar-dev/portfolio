@@ -4,6 +4,8 @@ import gmail2 from '../public/gmail2.png';
 import linkedin_light from '../public/linkedin-light.svg';
 import seta1 from '../public/Polygon3.svg';
 import seta2 from '../public/Polygon5.svg';
+import dedimar from '../public/dedimar2.svg';
+
 function Teste({ handleMostrarSobre, mostrar}) {
    
     return (
@@ -40,8 +42,10 @@ function Teste({ handleMostrarSobre, mostrar}) {
                     {mostrar? 'Menos sobre mim':'Mais sobre mim'}
                     <Image src={mostrar? seta1: seta2} alt={mostrar? 'Mostrar' : 'Esconder' }/>
                 </button>
+
+                
             </div>
-           
+           <Image src={dedimar}></Image>
         </div>  
         
     )
