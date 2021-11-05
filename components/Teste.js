@@ -1,10 +1,9 @@
 import Image from 'next/image';
-import seta1 from '../public/Polygon3.svg';
-import seta2 from '../public/Polygon5.svg';
 import github_light from '../public/github-light.svg';
 import gmail2 from '../public/gmail2.png';
 import linkedin_light from '../public/linkedin-light.svg';
-
+import seta1 from '../public/Polygon3.svg';
+import seta2 from '../public/Polygon5.svg';
 function Teste({ handleMostrarSobre, mostrar}) {
    
     return (
@@ -28,22 +27,19 @@ function Teste({ handleMostrarSobre, mostrar}) {
                 </li>
                 </ul>
             </nav>
-
-            <div className="titulo">
-            
-                <div className="titulo-apresentacao">
-                
-                    <h1>
-                        Olá, eu sou Dedimar!
-                        E sou apaixonando por tecnologia.
-                    </h1>
-                    <button  
-                        onClick={ handleMostrarSobre } 
-                        className="btns btns_sobre">
-                        {mostrar? 'Menos sobre Mim':'Mais sobre Mim'}
-                        <Image src={mostrar? seta1: seta2} alt={mostrar? 'Mostrar' : 'Esconder' }/>
-                    </button>
-                </div>  
+                               
+            <div className="titulo"> 
+                <div>
+                    <h1> Olá, eu sou Dedimar Santos!</h1>
+                    <p>E sou apaixonando por tecnologia.</p>  
+                </div>
+               
+                <button  
+                    onClick={ handleMostrarSobre } 
+                    className="btns btns_sobre">
+                    {mostrar? 'Menos sobre mim':'Mais sobre mim'}
+                    <Image src={mostrar? seta1: seta2} alt={mostrar? 'Mostrar' : 'Esconder' }/>
+                </button>
             </div>
            
         </div>  

@@ -9,17 +9,17 @@ function Footer() {
         <footer className="footer">
             <nav className="footer-pai-list">
 
-            <ul className="footer-list ">
-                <li>
-                    <Link className=" color-white" href="/">HOME</Link>
-                </li>
-                <li>
-                    <Link className="color-white" href="/">EXPERIÊNCIAS</Link>
-                </li>
-                <li>
-                    <Link className="color-white" href="/">QUALIFICAÇÕES</Link>
-                </li>
-            </ul>
+                <ul className="footer-list ">
+                    <li>
+                        <Link className=" color-white" href="/">HOME</Link>
+                    </li>
+                    <li>
+                        <Link className="color-white" href="/">EXPERIÊNCIAS</Link>
+                    </li>
+                    <li>
+                        <Link className="color-white" href="/">QUALIFICAÇÕES</Link>
+                    </li>
+                </ul>
             </nav>
             <nav className="footer-redes">
                 <a href="https://github.com/Dedimar-dev" >
