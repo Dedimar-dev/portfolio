@@ -382,12 +382,8 @@ body::-webkit-scrollbar-thumb {
 
   opacity: 80%;
   border-radius: 10px;
-
-  background-image: url("../public/dedimar2.png");
   background-color:#8C98dd;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position-x: 90%;
+ 
  
   gap: 200px;
 }
