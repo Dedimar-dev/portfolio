@@ -5,7 +5,6 @@ import linkedin_light from '../public/linkedin-light.svg';
 import seta1 from '../public/Polygon3.svg';
 import seta2 from '../public/Polygon5.svg';
 import style from '../styles/Titulo.module.css';
-import dedimar from '../public/dedimar2.svg';
 
 function Titulo({ handleMostrarSobre, mostrar }) {
 

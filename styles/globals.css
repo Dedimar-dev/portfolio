@@ -172,7 +172,7 @@ body::-webkit-scrollbar-thumb {
   gap: 30px;
 } 
 
-@media (max-width: 725px) {
+@media (max-width: 800px) {
   .section_list {
     display: none;
   }
