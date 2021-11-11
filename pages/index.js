@@ -1,9 +1,10 @@
-import Teste from '../components/Teste';
+import Titulo from '../components/Titulo';
 import Header from '../components/Header/Header';
 import Sobre from '../components/Sobre/Sobre';
 import Footer from '../components/Footer/Footer';
 import { useState } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
+import style from '../styles/Home.module.css';
 
 export default function Home() {
   const [mostrar, setMostrar] = useState(false);
@@ -24,9 +25,9 @@ export default function Home() {
   }
 
   return (
-    <div className="conteiner">
+    <div className={style.conteiner}>
       <Header />
-      <Teste 
+      <Titulo
         handleMostrarSobre={handleMostrarSobre}
         mostrar={mostrar}
       /> 

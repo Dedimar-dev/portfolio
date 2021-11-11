@@ -4,14 +4,15 @@ import gmail2 from '../public/gmail2.png';
 import linkedin_light from '../public/linkedin-light.svg';
 import seta1 from '../public/Polygon3.svg';
 import seta2 from '../public/Polygon5.svg';
-import dedimar from '../public/dedimar.png';
+import style from '../styles/Titulo.module.css';
+import dedimar from '../public/dedimar2.svg';
 
-function Teste({ handleMostrarSobre, mostrar }) {
+function Titulo({ handleMostrarSobre, mostrar }) {
 
     return (
         <div>
             <nav>
-                <ul className="section-list">
+                <ul className="section_list">
                     <li>
                         <a href="https://github.com/Dedimar-dev">
                             <Image width={30} height={30} src={github_light} alt="github" />
@@ -30,7 +31,7 @@ function Teste({ handleMostrarSobre, mostrar }) {
                 </ul>
             </nav>
 
-            <div className="titulo">
+            <div className={style.titulo}>
                 <div>
                     <h1> Olá, eu sou Dedimar Santos!</h1>
                     <p>E sou apaixonando por tecnologia.</p>
@@ -38,17 +39,17 @@ function Teste({ handleMostrarSobre, mostrar }) {
 
                 <button
                     onClick={handleMostrarSobre}
-                    className="btns btns_sobre">
+                    className={`${style.btns_sobre}`}>
                     {mostrar ? 'Menos sobre mim' : 'Mais sobre mim'}
                     <Image src={mostrar ? seta1 : seta2} alt={mostrar ? 'Mostrar' : 'Esconder'} />
                 </button>
-
-
+                <div className={style.div_foto}>
+        
+                </div>
             </div>
-            <Image width={300} height={300} src={dedimar} alt="Dedimar"></Image>
         </div>
 
     )
 }
 
-export default Teste;
+export default Titulo;

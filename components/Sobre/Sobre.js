@@ -1,10 +1,13 @@
+import style from '../../styles/Sobre.module.css';
 
 function Sobre() {
     return(
-        <section className="conteiner_2 sobre">
-        <h1 className="titulo-sobre-mim">Sobre mim</h1>
+        <section className={`${style.conteiner_2} ${style.sobre}`}>
+        <h1 className={style.titulo_sobre_mim}>
+            Sobre mim
+        </h1>
        
-        <div className=" apresentacao">
+        <div className={style.apresentacao}>
             <p>
                 Dedi é meu apelido favorito, sou preto, nordestino, moro na zona rural.
                 Acredito que por meio da tecnologia o mundo pode tornar-se mais igualitário.

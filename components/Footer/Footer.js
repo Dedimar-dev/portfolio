@@ -3,25 +3,26 @@ import linkedin_light from '../../public/linkedin-light.svg';
 import gmail2 from '../../public/gmail2.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import style from '../../styles/Footer.module.css';
 
 function Footer() {
     return(
-        <footer className="footer">
-            <nav className="footer-pai-list">
+        <footer className={style.footer}>
+            <nav className={style.footer_pai_list}>
 
-                <ul className="footer-list ">
+                <ul className={style.footer_list}>
                     <li>
-                        <Link className=" color-white" href="/">HOME</Link>
+                        <Link className="color_white" href="/">HOME</Link>
                     </li>
                     <li>
-                        <Link className="color-white" href="/">EXPERIÊNCIAS</Link>
+                        <Link className="color_white" href="/">EXPERIÊNCIAS</Link>
                     </li>
                     <li>
-                        <Link className="color-white" href="/">QUALIFICAÇÕES</Link>
+                        <Link className="color_white" href="/">QUALIFICAÇÕES</Link>
                     </li>
                 </ul>
             </nav>
-            <nav className="footer-redes">
+            <nav className={style.footer_redes}>
                 <a href="https://github.com/Dedimar-dev" >
                     <Image width={30} height={30} src={ github_light } alt="github" />
                 </a>
