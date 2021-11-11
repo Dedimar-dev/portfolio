@@ -1,13 +1,24 @@
 import style from '../../styles/Sobre.module.css';
+import Image from 'next/image';
+import dedimar from '../../public/dedimar.jpg';
 
 function Sobre() {
     return(
-        <section className={`${style.conteiner_2} ${style.sobre}`}>
+        <section className={style.conteiner_2}>
         <h1 className={style.titulo_sobre_mim}>
             Sobre mim
         </h1>
        
         <div className={style.apresentacao}>
+            <div className={style.apresentacao_image_pai} >
+                <Image 
+                    className={style.apresentacao_image_filho}
+                    src={dedimar} 
+                    width={400} 
+                    height={400} 
+                />
+            </div>
+            
             <p>
                 Dedi é meu apelido favorito, sou preto, nordestino, moro na zona rural.
                 Acredito que por meio da tecnologia o mundo pode tornar-se mais igualitário.
