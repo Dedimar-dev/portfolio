@@ -1,6 +1,6 @@
-import style from '../../styles/Sobre.module.css';
 import Image from 'next/image';
 import dedimar from '../../public/dedimar.jpg';
+import style from '../../styles/Sobre.module.css';
 
 function Sobre() {
     return(
@@ -16,6 +16,7 @@ function Sobre() {
                     src={dedimar} 
                     width={400} 
                     height={400} 
+                    alt="Dedimar"
                 />
             </div>
             

@@ -1,9 +1,10 @@
-import Link from 'next/link';
-import style from '../../styles/Header.module.css';
 import Image from 'next/image';
-import Menu from '../../public/menu.svg';
-import close from '../../public/close.svg';
+import Link from 'next/link';
 import { useState } from 'react';
+import close from '../../public/close.svg';
+import Menu from '../../public/menu.svg';
+import style from '../../styles/Header.module.css';
+import MenuLateral from '../MenuLateral';
 
 function Header() {
     const [open, setOpen] = useState(false);
@@ -11,7 +12,7 @@ function Header() {
     return (
         <header className={style.header}>
             <h1>DS</h1>
-            <nav className={` ${ open? style.header_fixed_pai_list : style.header_pai_list}`}>
+            <nav className={style.header_pai_list}>
                 <ul className={style.header_list}>
                     <li>
                         <Link className=" color_page_atual" href="/">
@@ -35,9 +36,11 @@ function Header() {
                     onClick={() => setOpen(!open)}
                     width={35}
                     height={35}
-                    src={open? close : Menu}
-                /> 
-            </div>           
+                    src={open ? close : Menu}
+                    alt={open ? 'close' : 'Menu'}
+                />
+            </div>
+           {open && <MenuLateral />}
         </header>
     )
 }
