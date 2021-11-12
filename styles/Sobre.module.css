@@ -11,7 +11,8 @@
 }
   
 .conteiner_2 h1 {
-    padding: 15px;
+    padding: 1rem 0;
+    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -49,7 +50,8 @@
 }
 
 .titulo_sobre_mim {
-    font-size: 4.2rem;
+    font-size: 5rem;
+    
 }
   
 @media (max-width: 1250px) {
@@ -83,6 +85,12 @@
   .apresentacao p { 
     width: 100%;
     font-size: 2rem;
+  }
+
+  .conteiner_2 h1 {
+    width: 75%;
+    font-size: 4rem;
+    text-align: left;
   }
   
 }
