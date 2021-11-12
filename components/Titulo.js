@@ -30,7 +30,7 @@ function Titulo({ handleMostrarSobre, mostrar }) {
                 </ul>
             </nav>
 
-            <div className={style.titulo}>
+            <div className={style.conteiner_titulo}>
                 <div>
                     <h1> Olá, eu sou Dedimar Santos!</h1>
                     <p>E sou apaixonando por tecnologia.</p>
@@ -42,9 +42,6 @@ function Titulo({ handleMostrarSobre, mostrar }) {
                     {mostrar ? 'Menos sobre mim' : 'Mais sobre mim'}
                     <Image src={mostrar ? seta1 : seta2} alt={mostrar ? 'Mostrar' : 'Esconder'} />
                 </button>
-                <div className={style.div_foto}>
-        
-                </div>
             </div>
         </div>
 
