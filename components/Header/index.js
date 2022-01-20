@@ -21,12 +21,17 @@ function Header() {
                     </li>
                     <li>
                         <Link className="color_white" href="/">
-                            EXPERIÊNCIAS
+                            SOBRE MIM
                         </Link>
                     </li>
                     <li>
                         <Link className="color_white" href="/">
-                            QUALIFICAÇÕES
+                            PROJETOS
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="color_white" href="/">
+                            HABILIDADES
                         </Link>
                     </li>
                 </ul>
