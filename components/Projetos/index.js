@@ -15,7 +15,7 @@ function Projetos() {
     const projetos = [
         {
             id: 1,
-            nome: 'AAAAAA',
+            nome: 'Portfólio',
             descricao: '',
             linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6822173644710563840/',
             imagem: imagemDesafioFront_M1,
