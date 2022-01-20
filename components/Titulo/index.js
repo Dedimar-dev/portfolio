@@ -6,13 +6,13 @@ import seta1 from '../../public/Polygon3.svg';
 import seta2 from '../../public/Polygon5.svg';
 import style from '../../styles/Titulo.module.css';
 
-function Titulo({ 
-    handleMostrarSobre, 
-    mostrarSobre, 
-    handleMostrarProjetos, 
-    mostrarProjetos, 
-    handleMostrarHabilidades, 
-    mostrarHabilidades 
+function Titulo({
+    handleMostrarSobre,
+    mostrarSobre,
+    handleMostrarProjetos,
+    mostrarProjetos,
+    handleMostrarHabilidades,
+    mostrarHabilidades
 }) {
 
     return (
@@ -44,26 +44,26 @@ function Titulo({
                 </div>
 
                 <span className={style.span_btn_mostrar}>
-                     <button
+                    <button
                         onClick={handleMostrarSobre}
                         className={`${style.btns_mostrar}`}>
                         {mostrarSobre ? 'Menos sobre mim' : 'Mais sobre mim'}
-                    <Image src={mostrarSobre ? seta1 : seta2} alt={mostrarSobre ? 'Mostrar' : 'Esconder'} />
+                        <Image src={mostrarSobre ? seta1 : seta2} alt={mostrarSobre ? 'Mostrar' : 'Esconder'} />
                     </button>
                     <button
                         onClick={handleMostrarProjetos}
                         className={`${style.btns_mostrar}`}>
-                            Projetos
+                        Projetos
                         <Image src={mostrarProjetos ? seta1 : seta2} alt={mostrarSobre ? 'Mostrar' : 'Esconder'} />
                     </button>
                     <button
                         onClick={handleMostrarHabilidades}
                         className={`${style.btns_mostrar}`}>
-                            Habilidades
+                        Habilidades
                         <Image src={mostrarHabilidades ? seta1 : seta2} alt={mostrarSobre ? 'Mostrar' : 'Esconder'} />
                     </button>
                 </span>
-               
+
             </div>
         </div>
 
