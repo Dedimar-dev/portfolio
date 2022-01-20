@@ -6,7 +6,14 @@ import seta1 from '../../public/Polygon3.svg';
 import seta2 from '../../public/Polygon5.svg';
 import style from '../../styles/Titulo.module.css';
 
-function Titulo({ handleMostrarSobre, mostrar }) {
+function Titulo({ 
+    handleMostrarSobre, 
+    mostrarSobre, 
+    handleMostrarProjetos, 
+    mostrarProjetos, 
+    handleMostrarHabilidades, 
+    mostrarHabilidades 
+}) {
 
     return (
         <div>
@@ -36,12 +43,27 @@ function Titulo({ handleMostrarSobre, mostrar }) {
                     <p>E sou apaixonando por tecnologia.</p>
                 </div>
 
-                <button
-                    onClick={handleMostrarSobre}
-                    className={`${style.btns_sobre}`}>
-                    {mostrar ? 'Menos sobre mim' : 'Mais sobre mim'}
-                    <Image src={mostrar ? seta1 : seta2} alt={mostrar ? 'Mostrar' : 'Esconder'} />
-                </button>
+                <span className={style.span_btn_mostrar}>
+                     <button
+                        onClick={handleMostrarSobre}
+                        className={`${style.btns_mostrar}`}>
+                        {mostrarSobre ? 'Menos sobre mim' : 'Mais sobre mim'}
+                    <Image src={mostrarSobre ? seta1 : seta2} alt={mostrarSobre ? 'Mostrar' : 'Esconder'} />
+                    </button>
+                    <button
+                        onClick={handleMostrarProjetos}
+                        className={`${style.btns_mostrar}`}>
+                            Projetos
+                        <Image src={mostrarProjetos ? seta1 : seta2} alt={mostrarSobre ? 'Mostrar' : 'Esconder'} />
+                    </button>
+                    <button
+                        onClick={handleMostrarHabilidades}
+                        className={`${style.btns_mostrar}`}>
+                            Habilidades
+                        <Image src={mostrarHabilidades ? seta1 : seta2} alt={mostrarSobre ? 'Mostrar' : 'Esconder'} />
+                    </button>
+                </span>
+               
             </div>
         </div>
 
