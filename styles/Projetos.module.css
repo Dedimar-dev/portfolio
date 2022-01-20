@@ -1,0 +1,133 @@
+.conteiner_Projetos {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    height: 60rem;
+    width: 80%;
+    margin-bottom: 5rem;
+    color: #fff;
+    gap: 4rem;
+}
+
+.conteiner_Projetos h1 {
+   font-size: 5rem;
+}
+
+.seta_direita,
+.seta_esquerda {
+    position: absolute;
+    top: 55%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.seta_direita {
+    right: 0;
+}
+
+.seta_esquerda {
+    left:0;
+}
+
+.div_projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 2rem;
+}
+  
+.div_projetos span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(10, 10, 20);
+    width: 100%;
+    height: 40rem;
+    border-radius: 0.5rem;
+    gap: 2rem;
+}
+  
+.div_projetos span h3 {
+    white-space: nowrap;
+    width: 100%;
+    height: 8rem;
+    overflow: hidden;          
+    text-overflow: ellipsis;
+}
+
+
+.div_texto {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    width: 35%;
+    height: 100%;
+    border-radius: 0.5rem;
+    font-size: 2.2rem;
+    gap: 5rem;
+}
+
+.div_imagem_projeto {
+    width: 60%;
+}
+
+    
+@media (max-width: 1250px) {
+   
+    .conteiner_Projetos div h1 {
+        /* font-size: 5rem; */
+    }
+
+    .conteiner_Projetos div {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 840px) {
+    .conteiner_Projetos {
+        width: 90vw;
+        padding: 2rem;
+    }
+
+    .conteiner_Projetos div  {
+        width: 80%;
+    }
+}
+
+@media (max-width: 610px) {
+
+    .conteiner_Projetos {
+        max-height: 100px;
+        justify-content: space-around;
+    }
+    .conteiner_Projetos div h1 {
+        font-size: 3.5rem;
+    }
+
+    .div_imagem {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .conteiner_Projetos {
+        padding: 1.2rem;
+    }
+    .conteiner_Projetos div  {
+        width: 100%;
+    }
+    .conteiner_Projetos div h1 {
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
