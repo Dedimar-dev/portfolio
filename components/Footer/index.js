@@ -15,10 +15,13 @@ function Footer() {
                         <Link className="color_white" href="/">HOME</Link>
                     </li>
                     <li>
-                        <Link className="color_white" href="/">EXPERIÊNCIAS</Link>
+                        <Link className="color_white" href="/">SOBRE MIM</Link>
                     </li>
                     <li>
-                        <Link className="color_white" href="/">QUALIFICAÇÕES</Link>
+                        <Link className="color_white" href="/">PROJETOS</Link>
+                    </li>
+                    <li>
+                        <Link className="color_white" href="/">HABILIDADES</Link>
                     </li>
                 </ul>
             </nav>
