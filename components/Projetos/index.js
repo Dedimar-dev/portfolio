@@ -20,7 +20,7 @@ function Projetos() {
             linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6822173644710563840/',
             imagem: imagemDesafioFront_M1,
             github: '',
-            tecnologias:'HTML - CSS'
+            tecnologias: 'HTML - CSS'
         },
         {
             id: 2,
@@ -29,7 +29,7 @@ function Projetos() {
             linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6839271447643373568/',
             imagem: imagemDesafioFront_M2,
             github: 'https://github.com/Dedimar-dev/desafio-frontend-modulo-02-integral',
-            tecnologias:'JavaScript - HTML - CSS'
+            tecnologias: 'JavaScript - HTML - CSS'
         },
         {
             id: 3,
@@ -38,7 +38,7 @@ function Projetos() {
             linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6858413633102241793/',
             imagem: imagemDesafioFront_M3,
             github: '',
-            tecnologias:'React.js'
+            tecnologias: 'React.js'
         },
         {
             id: 4,
@@ -47,7 +47,7 @@ function Projetos() {
             linkedin: '',
             imagem: imagemDesafioFront_M1,
             github: '',
-            tecnologias:''
+            tecnologias: ''
         },
         {
             id: 5,
@@ -56,7 +56,7 @@ function Projetos() {
             linkedin: '',
             imagem: imagemDesafioFront_M1,
             github: '',
-            tecnologias:''
+            tecnologias: ''
         },
         {
             id: 6,
@@ -65,7 +65,7 @@ function Projetos() {
             linkedin: '',
             imagem: imagemDesafioFront_M1,
             github: '',
-            tecnologias:''
+            tecnologias: ''
         },
         {
             id: 7,
@@ -74,7 +74,7 @@ function Projetos() {
             linkedin: '',
             imagem: imagemDesafioFront_M1,
             github: '',
-            tecnologias:''
+            tecnologias: ''
         },
         {
             id: 8,
@@ -83,7 +83,7 @@ function Projetos() {
             linkedin: '',
             imagem: imagemDesafioFront_M1,
             github: '',
-            tecnologias:''
+            tecnologias: ''
         },
     ]
 
@@ -148,10 +148,10 @@ function Projetos() {
                                     <Link href={projeto.linkedin}>
                                         <a target={'_blank'}>Ver no Linkedin</a>
                                     </Link>
-                                    <br/>
-                                    <Link href={projeto.github}> 
+                                    <br />
+                                    <Link href={projeto.github}>
                                         <a target={'_blank'}>Ver no GitHub</a>
-                                    </Link> 
+                                    </Link>
                                 </div>
                                 <p>{projeto.tecnologias}</p>
                             </div>
