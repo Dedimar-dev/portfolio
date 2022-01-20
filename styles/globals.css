@@ -24,7 +24,7 @@ button {
 
 body {
  
-  background: linear-gradient(rgba(15, 18, 55, 0.902),rgb(15, 18, 45));
+  background: linear-gradient(#0f1237e6,#0f122d);
   background-size: 100%;
   background-repeat: no-repeat;
 }

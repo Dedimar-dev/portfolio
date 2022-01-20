@@ -2,26 +2,17 @@
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-   
     height: 450px;
-
     min-height: 70vh; 
     min-width: 70vw;
-
     padding: 4rem;
-
     color: #fff;
-
     background: linear-gradient(rgb(15,18,40,0.9),rgb(15,18,40,0.5)),url('../public/pexels-luis-gomes-546819.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
-  
     margin: 10rem auto;
-  
     opacity: 80%;
     border-radius: 1rem;
-
 }
   
 .conteiner_titulo div {
@@ -37,27 +28,27 @@
     margin-bottom: 6rem;
 }
 
-.btns_sobre {
+.span_btn_mostrar {
+    display: flex;
+    gap: 1rem;
+}
+
+.btns_mostrar {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     background-color:rgb(31, 92, 141);
     color: rgb(255, 250, 250);
-
-    font-size: 2rem;
- 
-    border-radius: 0.3rem;
-  
+    font-size: 2rem; 
+    border-radius: 0.3rem; 
     cursor: pointer;
-    
-    width: 255px; 
+    width: 25rem; 
     height: 45px;
     padding: 2rem;
 }
 
   
-.btns_sobre:hover {
+.btns_mostrar:hover {
     background-color:steelblue;
 }
 
@@ -70,8 +61,6 @@
     .conteiner_titulo div {
         width: 60%;
     }
-
-
 }
 
 @media (max-width: 840px) {
@@ -90,6 +79,14 @@
     .conteiner_titulo div p{
         font-size: 3rem;
     }
+
+    .span_btn_mostrar {
+        flex-direction: column;
+    }
+
+    .btns_mostrar {
+        width: 60%;
+    }
       
 }
 
@@ -106,7 +103,6 @@
     .conteiner_titulo div p{
         font-size: 2.5rem;
     }
-    
 }
 
 @media (max-width: 400px) {
@@ -125,11 +121,10 @@
         font-size: 2.5rem;
     }
 
-    .btns_sobre {
+    .btns_mostrar {
         width: 100%;
-        font-size: 1.5rem;
     }
-    
+ 
 }
 
 
