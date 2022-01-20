@@ -4,7 +4,7 @@ import setaDireita from '../../public/seta-direita-branca.svg';
 import setaEsquerda from '../../public/seta-esquerda-branca.svg';
 import imagemDesafioFront_M1 from '../../public/desafio_front_M1.png';
 import imagemDesafioFront_M2 from '../../public/desafio_front_M2.png';
-import imagemDesafioFront_M3 from '../../public/desafio_front_M3.png';
+// import imagemDesafioFront_M3 from '../../public/desafio_front_M3.png';
 import style from '../../styles/Projetos.module.css';
 import Link from 'next/link';
 
@@ -36,7 +36,7 @@ function Projetos() {
             nome: 'Dindin',
             descricao: 'O sistema trata-se de uma aplicação para controles de finanças pessoais.',
             linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6858413633102241793/',
-            imagem: imagemDesafioFront_M3,
+            imagem: imagemDesafioFront_M2,
             github: '',
             tecnologias: 'React.js'
         },
