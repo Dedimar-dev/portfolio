@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  cursor: pointer;
+}
+
 button {
   all: unset;
   box-sizing: border-box;
