@@ -4,6 +4,8 @@ import setaDireita from '../../public/seta-direita-branca.svg';
 import setaEsquerda from '../../public/seta-esquerda-branca.svg';
 import imagemDesafioFront_M1 from '../../public/desafio_front_M1.png';
 import imagemDesafioFront_M2 from '../../public/desafio_front_M2.png';
+import imagemDesafioBack_M2 from '../../public/desafio_back_M2.png';
+import imagemDesafioBack_M3 from '../../public/desafio_back_M3.png';
 // import imagemDesafioFront_M3 from '../../public/desafio_front_M3.png';
 import miniDeliveryFront from '../../public/mini_delivery_front.png';
 import apiMiniDelivery from '../../public/api_mini_delivery.png';
@@ -17,77 +19,63 @@ function Projetos() {
     const projetos = [
         {
             id: 1,
-            nome: 'Portfólio',
-            descricao: '',
-            imagem: imagemDesafioFront_M1,
-            github: '',
-            tecnologias: 'HTML - CSS'
+            nome: 'API Mini Delivery',
+            descricao: 'Uma API REST feita para treinar integração com o Front end (site para cadastro de produtos (Fast food)).',
+            imagem: apiMiniDelivery,
+            site:'https://mini-delivery.netlify.app/',
+            github: 'https://github.com/Dedimar-dev/Mini-Delivery',
+            tecnologias: 'Node.js - Express.js - API Rest'
         },
         {
             id: 2,
+            nome: 'Mini Delivery',
+            descricao: 'Um site para cadastro de produtos (Fast food). Desenvolvido para treinar integração com o back end (API Mini Delivery)',
+            imagem: miniDeliveryFront,
+            github: 'https://github.com/Dedimar-dev/mini-delivery-front',
+            site: 'https://mini-delivery.netlify.app/',
+            tecnologias: 'React.js - CSS',
+        },
+        {
+            id: 3,
+            nome: 'Banco Digital',
+            descricao: 'Desafio de Back-end do Módulo 2 do curso Programação do Zero, da Cubos Academy, que consiste em criar uma API para um Banco Digital.',
+            imagem: imagemDesafioBack_M2,
+            github: 'https://github.com/Dedimar-dev/desafio-backend-modulo-02-sistema_bancario-',
+            tecnologias: 'Node.js - Express.js - API Rest'
+        },
+        {
+            id: 4,
+            nome: 'Marketplace',
+            descricao: 'Desafio de Back-end do Módulo 3 do curso Programação do Zero, da Cubos Academy, que consiste em criar uma API para marketplace.',
+            imagem: imagemDesafioBack_M3,
+            github: 'https://github.com/Dedimar-dev/desafio-back-end-m03-',
+            tecnologias: 'Node.js - Express.js - API Rest'
+        },
+
+        {
+            id: 4,
             nome: 'Cobos Flix',
-            descricao: 'O website trata-se de uma aplicação para um serviço de streaming (pense num Netflix).',
+            descricao: 'Desafio de Front-end do Módulo 2 do curso Programação do Zero, da Cubos Academy, que consiste em criar uma aplicação para um serviço de streaming (pense num Netflix).',
             imagem: imagemDesafioFront_M2,
             github: 'https://github.com/Dedimar-dev/desafio-frontend-modulo-02-integral',
             tecnologias: 'JavaScript - HTML - CSS'
         },
+
         {
-            id: 3,
+            id: 5,
             nome: 'Dindin',
-            descricao: 'O sistema trata-se de uma aplicação para controles de finanças pessoais.',
+            descricao: 'Desafio de Front-end do Módulo 3 do curso Programação do Zero, da Cubos Academy, que consiste em criar uma aplicação para controles de finanças pessoais.',
             imagem: imagemDesafioFront_M2,
             github: '',
             tecnologias: 'React.js - CSS'
         },
-        {
-            id: 4,
-            nome: 'Mini Delivery',
-            descricao: 'Um site para cadastro de produtos (Fast food). Desenvolvido para treinar integração com o back end (API Mini Delivery também desenvolvida por mim)',
-            imagem: miniDeliveryFront,
-            github: 'https://github.com/Dedimar-dev/mini-delivery-front',
-            site: 'https://mini-delivery.netlify.app/',
-            tecnologias: 'React.js - CSS'
-        },
-        {
-            id: 5,
-            nome: 'API Mini Delivery',
-            descricao: 'Uma API REST feita para treinar integração com o Front end (site para cadastro de produtos (Fast food), também desenvolvido por mim).',
-            imagem: apiMiniDelivery,
-            site: 'https://mini-delivery.netlify.app/',
-            github: 'https://github.com/Dedimar-dev/Mini-Delivery',
-            tecnologias: 'Node.js - Express'
-        },
-        {
-            id: 6,
-            nome: 'Projeto',
-            descricao: 'Projeto',
-            imagem: imagemDesafioFront_M1,
-            github: '',
-            tecnologias: ''
-        },
-        {
-            id: 7,
-            nome: 'Projeto',
-            descricao: 'Projeto',
-            imagem: imagemDesafioFront_M1,
-            github: '',
-            tecnologias: ''
-        },
-        {
-            id: 8,
-            nome: 'Projeto',
-            descricao: 'Projeto',
-            imagem: imagemDesafioFront_M1,
-            github: '',
-            tecnologias: ''
-        },
+
     ]
 
     const handleProximo = () => {
-        if (max >= projetos.length) return
+        if (max >= projetos.length - 1) return
         setMax(max += 1)
         setMin(min += 1)
-        console.log(max, projetos.length)
     }
 
     const handleAnterior = () => {
@@ -100,7 +88,7 @@ function Projetos() {
         <div className={style.conteiner_Projetos}>
 
             <h1>Projetos</h1>
-            {max < projetos.length &&
+            {max < projetos.length - 1 &&
                 <div className={style.seta_direita}>
                     <Image
                         src={setaDireita}
