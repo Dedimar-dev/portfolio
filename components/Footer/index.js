@@ -5,7 +5,11 @@ import gmail2 from '../../public/gmail2.png';
 import linkedin_light from '../../public/linkedin-light.svg';
 import style from '../../styles/Footer.module.css';
 
-function Footer() {
+function Footer({
+    handleMostrarSobre,
+    handleMostrarProjetos,
+    handleMostrarHabilidades
+}) {
     return(
         <footer className={style.footer}>
             <nav className={style.footer_pai_list}>
@@ -14,14 +18,14 @@ function Footer() {
                     <li>
                         <Link className="color_white" href="/">HOME</Link>
                     </li>
-                    <li>
-                        <Link className="color_white" href="/">SOBRE MIM</Link>
+                    <li onClick={handleMostrarSobre}>
+                        SOBRE MIM
                     </li>
-                    <li>
-                        <Link className="color_white" href="/">PROJETOS</Link>
+                    <li  onClick={handleMostrarProjetos}>
+                        PROJETOS
                     </li>
-                    <li>
-                        <Link className="color_white" href="/">HABILIDADES</Link>
+                    <li  onClick={handleMostrarHabilidades}>
+                        HABILIDADES
                     </li>
                 </ul>
             </nav>

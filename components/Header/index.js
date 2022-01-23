@@ -6,7 +6,11 @@ import Menu from '../../public/menu.svg';
 import style from '../../styles/Header.module.css';
 import MenuLateral from '../MenuLateral';
 
-function Header() {
+function Header({
+    handleMostrarSobre,
+    handleMostrarProjetos,
+    handleMostrarHabilidades
+}) {
     const [open, setOpen] = useState(false);
 
     return (
@@ -19,20 +23,14 @@ function Header() {
                             HOME
                         </Link>
                     </li>
-                    <li>
-                        <Link className="color_white" href="/">
-                            SOBRE MIM
-                        </Link>
+                    <li onClick={handleMostrarSobre}>
+                        SOBRE MIM
                     </li>
-                    <li>
-                        <Link className="color_white" href="/">
-                            PROJETOS
-                        </Link>
+                    <li  onClick={handleMostrarProjetos}>
+                        PROJETOS
                     </li>
-                    <li>
-                        <Link className="color_white" href="/">
-                            HABILIDADES
-                        </Link>
+                    <li  onClick={handleMostrarHabilidades}>
+                        HABILIDADES
                     </li>
                 </ul>
             </nav>

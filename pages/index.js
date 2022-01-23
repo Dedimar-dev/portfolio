@@ -78,7 +78,11 @@ export default function Home() {
 
   return (
     <div className={style.conteiner}>
-      <Header />
+      <Header 
+        handleMostrarSobre={handleMostrarSobre}
+        handleMostrarProjetos={handleMostrarProjetos}
+        handleMostrarHabilidades={handleMostrarHabilidades}
+       />
       <Titulo
         handleMostrarSobre={handleMostrarSobre}
         mostrarSobre={mostrarSobre}
@@ -90,7 +94,11 @@ export default function Home() {
       {mostrarSobre && <Sobre />}
       {mostrarHabilidades && <Habilidades/>}
       {mostrarProjetos && <Projetos/>}
-      <Footer />
+      <Footer 
+        handleMostrarSobre={handleMostrarSobre}
+        handleMostrarProjetos={handleMostrarProjetos}
+        handleMostrarHabilidades={handleMostrarHabilidades}
+       />
     </div>
   )
 }
