@@ -5,6 +5,8 @@ import setaEsquerda from '../../public/seta-esquerda-branca.svg';
 import imagemDesafioFront_M1 from '../../public/desafio_front_M1.png';
 import imagemDesafioFront_M2 from '../../public/desafio_front_M2.png';
 // import imagemDesafioFront_M3 from '../../public/desafio_front_M3.png';
+import miniDeliveryFront from '../../public/mini_delivery_front.png';
+import apiMiniDelivery from '../../public/api_mini_delivery.png';
 import style from '../../styles/Projetos.module.css';
 import Link from 'next/link';
 
@@ -17,7 +19,6 @@ function Projetos() {
             id: 1,
             nome: 'Portfólio',
             descricao: '',
-            linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6822173644710563840/',
             imagem: imagemDesafioFront_M1,
             github: '',
             tecnologias: 'HTML - CSS'
@@ -26,7 +27,6 @@ function Projetos() {
             id: 2,
             nome: 'Cobos Flix',
             descricao: 'O website trata-se de uma aplicação para um serviço de streaming (pense num Netflix).',
-            linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6839271447643373568/',
             imagem: imagemDesafioFront_M2,
             github: 'https://github.com/Dedimar-dev/desafio-frontend-modulo-02-integral',
             tecnologias: 'JavaScript - HTML - CSS'
@@ -35,34 +35,32 @@ function Projetos() {
             id: 3,
             nome: 'Dindin',
             descricao: 'O sistema trata-se de uma aplicação para controles de finanças pessoais.',
-            linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6858413633102241793/',
             imagem: imagemDesafioFront_M2,
             github: '',
-            tecnologias: 'React.js'
+            tecnologias: 'React.js - CSS'
         },
         {
             id: 4,
-            nome: 'Projeto',
-            descricao: 'Projeto',
-            linkedin: '',
-            imagem: imagemDesafioFront_M1,
-            github: '',
-            tecnologias: ''
+            nome: 'Mini Delivery',
+            descricao: 'Um site para cadastro de produtos (Fast food). Desenvolvido para treinar integração com o back end (API Mini Delivery também desenvolvida por mim)',
+            imagem: miniDeliveryFront,
+            github: 'https://github.com/Dedimar-dev/mini-delivery-front',
+            site: 'https://mini-delivery.netlify.app/',
+            tecnologias: 'React.js - CSS'
         },
         {
             id: 5,
-            nome: 'Projeto',
-            descricao: 'Projeto',
-            linkedin: '',
-            imagem: imagemDesafioFront_M1,
-            github: '',
-            tecnologias: ''
+            nome: 'API Mini Delivery',
+            descricao: 'Uma API REST feita para treinar integração com o Front end (site para cadastro de produtos (Fast food), também desenvolvido por mim).',
+            imagem: apiMiniDelivery,
+            site: 'https://mini-delivery.netlify.app/',
+            github: 'https://github.com/Dedimar-dev/Mini-Delivery',
+            tecnologias: 'Node.js - Express'
         },
         {
             id: 6,
             nome: 'Projeto',
             descricao: 'Projeto',
-            linkedin: '',
             imagem: imagemDesafioFront_M1,
             github: '',
             tecnologias: ''
@@ -71,7 +69,6 @@ function Projetos() {
             id: 7,
             nome: 'Projeto',
             descricao: 'Projeto',
-            linkedin: '',
             imagem: imagemDesafioFront_M1,
             github: '',
             tecnologias: ''
@@ -80,7 +77,6 @@ function Projetos() {
             id: 8,
             nome: 'Projeto',
             descricao: 'Projeto',
-            linkedin: '',
             imagem: imagemDesafioFront_M1,
             github: '',
             tecnologias: ''
@@ -145,10 +141,11 @@ function Projetos() {
                                 <h2>{projeto.nome}</h2>
                                 <p>{projeto.descricao}</p>
                                 <div>
-                                    <Link href={projeto.linkedin}>
-                                        <a target={'_blank'}>Ver no Linkedin</a>
+                                { projeto.site &&  
+                                    <Link href={projeto.site}>
+                                        <a target={'_blank'}>Ver Site</a>
                                     </Link>
-                                    <br />
+                                }
                                     <Link href={projeto.github}>
                                         <a target={'_blank'}>Ver no GitHub</a>
                                     </Link>

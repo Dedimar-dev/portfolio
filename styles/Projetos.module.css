@@ -69,7 +69,14 @@
     height: 100%;
     border-radius: 0.5rem;
     font-size: 2.2rem;
-    gap: 5rem;
+    gap: 3.5rem;
+}
+
+.div_texto div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.7rem;
 }
 
 .div_imagem_projeto {
