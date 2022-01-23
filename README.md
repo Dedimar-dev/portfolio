@@ -6,14 +6,12 @@
   <a href="https://portfolio-dedimar.vercel.app/">Clique para visitar o projeto</a>  
 </div>
 
-<h1>🛠️Tecnologias utilizadas</h1>
-<ul>
-  <li>Next.js</li>
-  <li>React.js</li>
-  <li>CSS</li>
-</ul>
+# 🛠️Tecnologias utilizadas
+ - Next.js
+ - React.js
+ - CSS
 
-<h1>📚Seções</h1>
+# 📚Seções
 <ul>
   <li><b>Home</b>: Nele temos uma breve apresentação</li>
   <li><b>Sobre mim</b>: Nessa seção tenho uma descrição dizendo um pouco sobre quem sou</li>
@@ -21,6 +19,6 @@
   <li><b>Habilidades</b>: Nele apresentamos meus conhecimentos em algumas linguagens</li>
 </ul>
 
-<h1>Autor</h1>
+# Autor
 <img src="https://user-images.githubusercontent.com/85937748/150689406-ad12d7cb-f044-4f7a-9f26-8e48f74c018c.jpg" width="150"/>
 <b>Dedimar Santos</b>
