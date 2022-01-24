@@ -9,6 +9,7 @@ import imagemDesafioBack_M3 from '../../public/desafio_back_M3.png';
 // import imagemDesafioFront_M3 from '../../public/desafio_front_M3.png';
 import miniDeliveryFront from '../../public/mini_delivery_front.png';
 import apiMiniDelivery from '../../public/api_mini_delivery.png';
+import decodificador from '../../public/Decodificador.png';
 import style from '../../styles/Projetos.module.css';
 import Link from 'next/link';
 
@@ -63,6 +64,15 @@ function Projetos() {
 
         {
             id: 5,
+            nome: 'Decodificador de Texto',
+            descricao: 'Projeto desenvolvido durante o Alura Challenge - Oracle ONE, que consiste em desenvolver um Decodificador de Texto',
+            imagem: decodificador,
+            github: 'https://github.com/Dedimar-dev/alura-challenge-oracle-one',
+            site:'https://decodificador-de-texto-dedimar.netlify.app/',
+            tecnologias: 'JavaScript - HTML - CSS'
+        },
+        {
+            id: 6,
             nome: 'Dindin',
             descricao: 'Desafio de Front-end do Módulo 3 do curso Programação do Zero, da Cubos Academy, que consiste em criar uma aplicação para controles de finanças pessoais.',
             imagem: imagemDesafioFront_M2,

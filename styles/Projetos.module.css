@@ -89,12 +89,18 @@
     
 @media (max-width: 1250px) {
    
-    .conteiner_Projetos div h1 {
-        /* font-size: 5rem; */
+    .conteiner_Projetos div {
+        /* width: 50rem; */
+
+    }
+    
+    .div_projetos {
+        width: 70rem;
     }
 
-    .conteiner_Projetos div {
-        width: 30rem;
+    
+    .div_imagem_projeto {
+        /* display: none; */
     }
 }
 
