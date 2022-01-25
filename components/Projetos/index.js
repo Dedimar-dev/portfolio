@@ -71,14 +71,25 @@ function Projetos() {
             site:'https://decodificador-de-texto-dedimar.netlify.app/',
             tecnologias: 'JavaScript - HTML - CSS'
         },
+
         {
             id: 6,
+            nome: 'Portfólio ',
+            descricao: 'Desafio de Front-end do Módulo 1 do curso Programação do Zero, da Cubos Academy, que consiste em replicar um website de portfólio .',
+            imagem: imagemDesafioFront_M1,
+            github: 'https://github.com/Dedimar-dev/Desafio-front-end-modulo-1',
+            tecnologias: 'HTML - CSS'
+        },
+
+        {
+            id: 7,
             nome: 'Dindin',
             descricao: 'Desafio de Front-end do Módulo 3 do curso Programação do Zero, da Cubos Academy, que consiste em criar uma aplicação para controles de finanças pessoais.',
             imagem: imagemDesafioFront_M2,
             github: '',
             tecnologias: 'React.js - CSS'
         },
+
 
     ]
 
