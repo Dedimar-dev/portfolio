@@ -1,8 +1,10 @@
 <h1 align="center">👨🏿‍💻Meu Portfólio</h1>
 
 <h3 align="center">  Portfólio criado com o intuito de mostrar meus projetos ao decorrer da minha carreira.</h3>
+
+![portfolio-dedimar](https://user-images.githubusercontent.com/85937748/150992757-f59f9e87-be3c-449b-a7aa-8975b507b8b4.png)
+
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/85937748/150688238-82f5bf9b-031e-4e1e-b38e-18affa4911c6.png"/>  
   <a href="https://portfolio-dedimar.vercel.app/">Clique para visitar o projeto</a>  
 </div>
 
