@@ -6,7 +6,7 @@ import imagemDesafioFront_M1 from '../../public/desafio_front_M1.png';
 import imagemDesafioFront_M2 from '../../public/desafio_front_M2.png';
 import imagemDesafioBack_M2 from '../../public/desafio_back_M2.png';
 import imagemDesafioBack_M3 from '../../public/desafio_back_M3.png';
-// import imagemDesafioFront_M3 from '../../public/desafio_front_M3.png';
+import imagemDesafioFront_M3 from '../../public/desafio_front_M3.png';
 import miniDeliveryFront from '../../public/mini_delivery_front.png';
 import apiMiniDelivery from '../../public/api_mini_delivery.png';
 import decodificador from '../../public/Decodificador.png';
@@ -54,7 +54,15 @@ function Projetos() {
         },
 
         {
-            id: 4,
+            id: 5,
+            nome: 'Dindin',
+            descricao: 'Desafio de Front-end do Módulo 3 do curso Programação do Zero, da Cubos Academy, que consiste em criar uma aplicação para controles de finanças pessoais.',
+            imagem: imagemDesafioFront_M3,
+            github: '',
+            tecnologias: 'React.js - CSS'
+        },
+        {
+            id: 6,
             nome: 'Cobos Flix',
             descricao: 'Desafio de Front-end do Módulo 2 do curso Programação do Zero, da Cubos Academy, que consiste em criar uma aplicação para um serviço de streaming (pense num Netflix).',
             imagem: imagemDesafioFront_M2,
@@ -63,7 +71,7 @@ function Projetos() {
         },
 
         {
-            id: 5,
+            id: 7,
             nome: 'Decodificador de Texto',
             descricao: 'Projeto desenvolvido durante o Alura Challenge - Oracle ONE, que consiste em desenvolver um Decodificador de Texto',
             imagem: decodificador,
@@ -73,7 +81,7 @@ function Projetos() {
         },
 
         {
-            id: 6,
+            id: 8,
             nome: 'Portfólio ',
             descricao: 'Desafio de Front-end do Módulo 1 do curso Programação do Zero, da Cubos Academy, que consiste em replicar um website de portfólio .',
             imagem: imagemDesafioFront_M1,
@@ -81,35 +89,32 @@ function Projetos() {
             tecnologias: 'HTML - CSS'
         },
 
-        {
-            id: 7,
-            nome: 'Dindin',
-            descricao: 'Desafio de Front-end do Módulo 3 do curso Programação do Zero, da Cubos Academy, que consiste em criar uma aplicação para controles de finanças pessoais.',
-            imagem: imagemDesafioFront_M2,
-            github: '',
-            tecnologias: 'React.js - CSS'
-        },
-
-
     ]
 
     const handleProximo = () => {
-        if (max >= projetos.length - 1) return
-        setMax(max += 1)
-        setMin(min += 1)
+        if (max >= projetos.length) {
+            setMax(1);
+            setMin(0);
+            return
+        }
+        setMax(max += 1);
+        setMin(min += 1);
     }
 
     const handleAnterior = () => {
-        if (min <= 0) return
-        setMax(max -= 1)
-        setMin(min -= 1)
+        if (min <= 0) {
+            setMax(projetos.length );
+            setMin(projetos.length - 1);
+            return
+        }
+        setMax(max -= 1);
+        setMin(min -= 1);
     }
 
     return (
         <div className={style.conteiner_Projetos}>
 
             <h1>Projetos</h1>
-            {max < projetos.length - 1 &&
                 <div className={style.seta_direita}>
                     <Image
                         src={setaDireita}
@@ -117,9 +122,7 @@ function Projetos() {
                         alt='Próximo'
                     />
                 </div>
-            }
-
-            {min > 0 &&
+            
                 <div
                     className={style.seta_esquerda}
                 >
@@ -130,7 +133,6 @@ function Projetos() {
                     />
                 </div>
 
-            }
             <div className={style.div_projetos}>
                 {projetos.slice(min, max).map(projeto => {
                     return (
@@ -140,7 +142,7 @@ function Projetos() {
                             <div className={style.div_imagem_projeto}>
                                 <Image
                                     width={700}
-                                    height={420}
+                                    height={425}
                                     src={projeto.imagem}
                                     alt="Imagem-Projeto"
                                 />
@@ -165,7 +167,7 @@ function Projetos() {
                     )
                 })}
             </div>
-
+            <h2>{`Página ${max} de ${projetos.length}`}</h2>
         </div>
     )
 }
