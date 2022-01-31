@@ -43,7 +43,14 @@ function Header({
                     alt={open ? 'close' : 'Menu'}
                 />
             </div>
-           {open && <MenuLateral />}
+           {open && 
+            <MenuLateral 
+                handleMostrarSobre={handleMostrarSobre}
+                handleMostrarProjetos={handleMostrarProjetos}
+                handleMostrarHabilidades={handleMostrarHabilidades}
+                setOpen={setOpen}
+            />
+           }
         </header>
     )
 }

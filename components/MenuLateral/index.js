@@ -1,29 +1,37 @@
 import Link from "next/link";
 import style from '../../styles/MenuLateral.module.css';
 
-function MenuLateral() {
+function MenuLateral({
+    handleMostrarSobre,
+    handleMostrarProjetos,
+    handleMostrarHabilidades,
+    setOpen
+}) {
     return (
         <nav className={style.menu_pai_list }>
             <ul className={style.menu_list}>
-                <li>
+                <li onClick={() => setOpen(false)}>
                     <Link className=" color_page_atual" href="/">
                         HOME
                     </Link>
                 </li>
-                <li>
-                    <Link className="color_white" href="/">
-                        SOBRE MIM
-                    </Link>
+                <li onClick={() => {
+                    handleMostrarSobre()
+                    setOpen(false);
+                }}>
+                    SOBRE MIM
                 </li>
-                <li>
-                    <Link className="color_white" href="/">
-                        PROJETOS
-                    </Link>
+                <li onClick={() => {
+                    handleMostrarProjetos()
+                    setOpen(false);
+                }}>
+                    PROJETOS
                 </li>
-                <li>
-                    <Link className="color_white" href="/">
-                        HABILIDADES
-                    </Link>
+                <li onClick={() => {
+                    handleMostrarHabilidades()
+                    setOpen(false);
+                }}>
+                    HABILIDADES
                 </li>
             </ul>
         </nav>
