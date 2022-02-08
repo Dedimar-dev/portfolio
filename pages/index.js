@@ -87,7 +87,6 @@ export default function Home() {
   }
 
   return (
-    <GlobalProvider>
       <div className={style.conteiner}>
         <Header 
           handleMostrarSobre={handleMostrarSobre}
@@ -108,6 +107,5 @@ export default function Home() {
           handleMostrarHabilidades={handleMostrarHabilidades}
         />
       </div>
-    </GlobalProvider>
   )
 }
