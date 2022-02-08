@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -7,14 +6,25 @@ import Titulo from '../components/Titulo';
 import Habilidades from '../components/Habilidades';
 import Projetos from '../components/Projetos';
 import style from '../styles/Home.module.css';
+import { GlobalProvider } from '../Context/GlobalContext';
+import useGlobal from '../hooks/useGlobal';
 
 export default function Home() {
-  const [mostrarSobre, setMostrarSobre] = useState(false);
-  const [mostrarHabilidades, setMostrarHabilidades] = useState(false);
-  const [mostrarProjetos, setMostrarProjetos] = useState(false);
-  const [irParaSobre, setIrParaSobre] = useState(false);
-  const [irParaProjetos, setIrParaProjetos] = useState(false);
-  const [irParaHabilidades, setIrParaHabilidades] = useState(false);
+  const {
+    irParaHabilidades, 
+    setIrParaHabilidades,
+    irParaProjetos, 
+    setIrParaProjetos,
+    irParaSobre, 
+    setIrParaSobre,
+    mostrarProjetos, 
+    setMostrarProjetos,
+    mostrarHabilidades, 
+    setMostrarHabilidades,
+    mostrarSobre, 
+    setMostrarSobre
+  } = useGlobal();
+
 
   const handleMostrarSobre = () => {
 
@@ -77,28 +87,27 @@ export default function Home() {
   }
 
   return (
-    <div className={style.conteiner}>
-      <Header 
-        handleMostrarSobre={handleMostrarSobre}
-        handleMostrarProjetos={handleMostrarProjetos}
-        handleMostrarHabilidades={handleMostrarHabilidades}
-       />
-      <Titulo
-        handleMostrarSobre={handleMostrarSobre}
-        mostrarSobre={mostrarSobre}
-        handleMostrarProjetos={handleMostrarProjetos}
-        mostrarProjetos={mostrarProjetos}
-        handleMostrarHabilidades={handleMostrarHabilidades}
-        mostrarHabilidades={mostrarHabilidades}
-      />
-      {mostrarSobre && <Sobre />}
-      {mostrarHabilidades && <Habilidades/>}
-      {mostrarProjetos && <Projetos/>}
-      <Footer 
-        handleMostrarSobre={handleMostrarSobre}
-        handleMostrarProjetos={handleMostrarProjetos}
-        handleMostrarHabilidades={handleMostrarHabilidades}
-       />
-    </div>
+    <GlobalProvider>
+      <div className={style.conteiner}>
+        <Header 
+          handleMostrarSobre={handleMostrarSobre}
+          handleMostrarProjetos={handleMostrarProjetos}
+          handleMostrarHabilidades={handleMostrarHabilidades}
+        />
+        <Titulo
+          handleMostrarSobre={handleMostrarSobre}
+          handleMostrarProjetos={handleMostrarProjetos}
+          handleMostrarHabilidades={handleMostrarHabilidades}
+        />
+        {mostrarSobre && <Sobre />}
+        {mostrarHabilidades && <Habilidades/>}
+        {mostrarProjetos && <Projetos/>}
+        <Footer 
+          handleMostrarSobre={handleMostrarSobre}
+          handleMostrarProjetos={handleMostrarProjetos}
+          handleMostrarHabilidades={handleMostrarHabilidades}
+        />
+      </div>
+    </GlobalProvider>
   )
 }
