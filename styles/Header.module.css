@@ -3,10 +3,14 @@
     align-items: center;
     justify-content:space-between;
     font-size: 1.6rem;
-    position: absolute;
+    position: fixed;
     top: 0;
+    background-color: rgba(25,2,47,0.2);
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
     width: 100%;
     padding: 2rem 15rem;  
+    z-index: 1;
   
   }
   
