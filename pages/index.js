@@ -6,7 +6,6 @@ import Titulo from '../components/Titulo';
 import Habilidades from '../components/Habilidades';
 import Projetos from '../components/Projetos';
 import style from '../styles/Home.module.css';
-import { GlobalProvider } from '../Context/GlobalContext';
 import useGlobal from '../hooks/useGlobal';
 
 export default function Home() {
