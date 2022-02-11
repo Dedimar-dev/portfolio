@@ -6,7 +6,7 @@ import seta1 from '../../public/Polygon3.svg';
 import seta2 from '../../public/Polygon5.svg';
 import style from '../../styles/Titulo.module.css';
 import Typical from 'react-typical';
-import useGlobal from '../../hooks/useGlobal'
+import useGlobal from '../../hooks/useGlobal';
 
 function Titulo({
   handleMostrarSobre,
@@ -15,10 +15,16 @@ function Titulo({
 }) {
 
   const {
+    mostrarSecao,
+    setOpen,
+    open
+  } = useGlobal();
+
+  const {
     mostrarSobre,
     mostrarProjetos,
     mostrarHabilidades
-  } = useGlobal();
+  } = mostrarSecao;
 
   return (
     <div>
@@ -26,17 +32,32 @@ function Titulo({
         <ul className="section_list">
           <li>
             <a href="https://github.com/Dedimar-dev">
-              <Image width={30} height={30} src={github_light} alt="github" />
+              <Image 
+                width={30} 
+                height={30} 
+                src={github_light} 
+                alt="github" 
+              />
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/dedimar-santos-3bba211b7/" >
-              <Image width={30} height={30} src={linkedin_light} alt="linkedin" />
+              <Image 
+                width={30} 
+                height={30} 
+                src={linkedin_light} 
+                alt="linkedin" 
+              />
             </a>
           </li>
           <li>
             <a href="mailto:santos.dedimar@gmail.com?subject=Olá Dedimar," >
-              <Image width={30} height={30} src={gmail2} alt="email" />
+              <Image 
+                width={30} 
+                height={30} 
+                src={gmail2} 
+                alt="email" 
+              />
             </a>
           </li>
         </ul>
@@ -55,23 +76,31 @@ function Titulo({
           <button
             onClick={handleMostrarSobre}
             className={`${style.btns_mostrar}`}>
-            {mostrarSobre ? 'Menos sobre mim' : 'Mais sobre mim'}
-            <Image src={mostrarSobre ? seta1 : seta2} alt={mostrarSobre ? 'Mostrar' : 'Esconder'} />
+             sobre mim
+            <Image 
+              src={mostrarSobre ? seta1 : seta2} 
+              alt={mostrarSobre ? 'Mostrar' : 'Esconder'} 
+            />
           </button>
           <button
             onClick={handleMostrarProjetos}
             className={`${style.btns_mostrar}`}>
             Projetos
-            <Image src={mostrarProjetos ? seta1 : seta2} alt={mostrarSobre ? 'Mostrar' : 'Esconder'} />
+            <Image 
+              src={mostrarProjetos ? seta1 : seta2} 
+              alt={mostrarProjetos ? 'Mostrar' : 'Esconder'} 
+            />
           </button>
           <button
-            onClick={handleMostrarHabilidades}
+            onClick={() => handleMostrarHabilidades(mostrarHabilidades)}
             className={`${style.btns_mostrar}`}>
             Habilidades
-            <Image src={mostrarHabilidades ? seta1 : seta2} alt={mostrarSobre ? 'Mostrar' : 'Esconder'} />
+            <Image 
+              src={mostrarHabilidades ? seta1 : seta2} 
+              alt={mostrarHabilidades ? 'Mostrar' : 'Esconder'} 
+            />
           </button>
         </span>
-
       </div>
     </div>
 
