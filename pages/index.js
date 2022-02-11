@@ -5,106 +5,107 @@ import Sobre from '../components/Sobre';
 import Titulo from '../components/Titulo';
 import Habilidades from '../components/Habilidades';
 import Projetos from '../components/Projetos';
+import MenuLateral from '../components/MenuLateral';
 import style from '../styles/Home.module.css';
 import useGlobal from '../hooks/useGlobal';
 
 export default function Home() {
   const {
-    irParaHabilidades, 
-    setIrParaHabilidades,
-    irParaProjetos, 
-    setIrParaProjetos,
-    irParaSobre, 
-    setIrParaSobre,
-    mostrarProjetos, 
-    setMostrarProjetos,
-    mostrarHabilidades, 
-    setMostrarHabilidades,
-    mostrarSobre, 
-    setMostrarSobre
+    mostrarSecao,
+    setMostrarSecao,
+    open
   } = useGlobal();
 
+  const {
+    mostrarProjetos,
+    mostrarHabilidades,
+    mostrarSobre
+  } = mostrarSecao;
 
   const handleMostrarSobre = () => {
 
-    setMostrarProjetos(false);
-    setIrParaProjetos(false);
-    setMostrarHabilidades(false);
-    setIrParaHabilidades(false);
-
-    if (!irParaSobre) {
-      setIrParaSobre(true);
-      scroll.scrollTo(650);
-      setMostrarSobre(!mostrarSobre);
+    if (!mostrarSobre) {
+      scroll.scrollTo(1000);
+      setMostrarSecao({
+        mostrarSobre: !mostrarSobre
+      })
     }
 
-    if (irParaSobre) {
-      setIrParaSobre(false);
+    if (mostrarSobre) {
       scroll.scrollToTop();
-      setTimeout(() => setMostrarSobre(!mostrarSobre), 1000);
+      setTimeout(() => {
+        setMostrarSecao({
+          mostrarSobre: !mostrarSobre
+        })
+      }, 1000);
     }
   }
 
   const handleMostrarProjetos = () => {
 
-    setMostrarSobre(false);
-    setIrParaSobre(false);
-    setMostrarHabilidades(false);
-    setIrParaHabilidades(false);
-
-    if (!irParaProjetos) {
-      setIrParaProjetos(true);
-      scroll.scrollTo(750);
-      setMostrarProjetos(!mostrarProjetos);
+    if (!mostrarProjetos) {
+      scroll.scrollTo(1000);
+      setMostrarSecao({
+        mostrarProjetos: !mostrarProjetos
+      })
     }
 
-    if (irParaProjetos) {
-      setIrParaProjetos(false);
+    if (mostrarProjetos) {
       scroll.scrollToTop();
-      setTimeout(() => setMostrarProjetos(!mostrarProjetos), 1000);
+      setTimeout(() => {
+        setMostrarSecao({
+          mostrarProjetos: !mostrarProjetos
+        })
+      }, 1000);
     }
   }
 
   const handleMostrarHabilidades = () => {
 
-    setMostrarProjetos(false);
-    setIrParaProjetos(false);
-    setMostrarSobre(false);
-    setIrParaSobre(false);
-
-    if (!irParaHabilidades) {
-      setIrParaHabilidades(true);
+    if (!mostrarHabilidades) {
       scroll.scrollTo(1000);
-      setMostrarHabilidades(!mostrarHabilidades);
+      setMostrarSecao({
+        mostrarHabilidades: !mostrarHabilidades
+      })
     }
 
-    if (irParaHabilidades) {
-      setIrParaHabilidades(false);
+    if (mostrarHabilidades) {
       scroll.scrollToTop();
-      setTimeout(() => setMostrarHabilidades(!mostrarHabilidades), 1000);
+      setTimeout(() => {
+        setMostrarSecao({
+          mostrarHabilidades: !mostrarHabilidades
+        })
+      }, 1000);
     }
   }
 
   return (
-      <div className={style.conteiner}>
-        <Header 
-          handleMostrarSobre={handleMostrarSobre}
-          handleMostrarProjetos={handleMostrarProjetos}
-          handleMostrarHabilidades={handleMostrarHabilidades}
+    <div className={style.conteiner}>
+      <Header
+        handleMostrarSobre={handleMostrarSobre}
+        handleMostrarProjetos={handleMostrarProjetos}
+        handleMostrarHabilidades={handleMostrarHabilidades}
+      />
+      <Titulo
+        handleMostrarSobre={handleMostrarSobre}
+        handleMostrarProjetos={handleMostrarProjetos}
+        handleMostrarHabilidades={handleMostrarHabilidades}
+      />
+      {mostrarSobre && <Sobre />}
+      {mostrarHabilidades && <Habilidades />}
+      {mostrarProjetos && <Projetos />}
+      {open && 
+        <MenuLateral 
+            handleMostrarSobre={handleMostrarSobre}
+            handleMostrarProjetos={handleMostrarProjetos}
+            handleMostrarHabilidades={handleMostrarHabilidades}
         />
-        <Titulo
-          handleMostrarSobre={handleMostrarSobre}
-          handleMostrarProjetos={handleMostrarProjetos}
-          handleMostrarHabilidades={handleMostrarHabilidades}
-        />
-        {mostrarSobre && <Sobre />}
-        {mostrarHabilidades && <Habilidades/>}
-        {mostrarProjetos && <Projetos/>}
-        <Footer 
-          handleMostrarSobre={handleMostrarSobre}
-          handleMostrarProjetos={handleMostrarProjetos}
-          handleMostrarHabilidades={handleMostrarHabilidades}
-        />
-      </div>
+      }
+      <Footer
+        handleMostrarSobre={handleMostrarSobre}
+        handleMostrarProjetos={handleMostrarProjetos}
+        handleMostrarHabilidades={handleMostrarHabilidades}
+      />
+    </div>
   )
 }
