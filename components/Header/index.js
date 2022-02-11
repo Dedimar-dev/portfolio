@@ -1,17 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
-import close from '../../public/close.svg';
 import Menu from '../../public/menu.svg';
 import style from '../../styles/Header.module.css';
-import MenuLateral from '../MenuLateral';
+import useGlobal from '../../hooks/useGlobal';
 
 function Header({
     handleMostrarSobre,
     handleMostrarProjetos,
     handleMostrarHabilidades
 }) {
-    const [open, setOpen] = useState(false);
+
+    const {
+        open, 
+        setOpen
+    } = useGlobal();
 
     return (
         <header className={style.header}>
@@ -36,21 +38,13 @@ function Header({
             </nav>
             <div className={style.div_menu}>
                 <Image
-                    onClick={() => setOpen(!open)}
+                    onClick={() => setOpen(true)}
                     width={35}
                     height={35}
-                    src={open ? close : Menu}
-                    alt={open ? 'close' : 'Menu'}
+                    src={Menu}
+                    alt={'Menu'}
                 />
             </div>
-           {open && 
-            <MenuLateral 
-                handleMostrarSobre={handleMostrarSobre}
-                handleMostrarProjetos={handleMostrarProjetos}
-                handleMostrarHabilidades={handleMostrarHabilidades}
-                setOpen={setOpen}
-            />
-           }
         </header>
     )
 }

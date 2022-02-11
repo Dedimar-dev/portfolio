@@ -1,14 +1,31 @@
 import Link from "next/link";
+import Image from 'next/image';
 import style from '../../styles/MenuLateral.module.css';
+import close from '../../public/close.svg';
+import useGlobal from "../../hooks/useGlobal";
 
 function MenuLateral({
     handleMostrarSobre,
     handleMostrarProjetos,
     handleMostrarHabilidades,
-    setOpen
 }) {
+
+    const {
+        setOpen,
+        open
+    } = useGlobal();
+
     return (
         <nav className={style.menu_pai_list }>
+            <div className="div-close">
+                <Image
+                    onClick={() => setOpen(false)}
+                    width={35}
+                    height={35}
+                    src={close}
+                    alt={'close'}
+                />
+            </div>
             <ul className={style.menu_list}>
                 <li onClick={() => setOpen(false)}>
                     <Link className=" color_page_atual" href="/">
@@ -34,7 +51,7 @@ function MenuLateral({
                     HABILIDADES
                 </li>
             </ul>
-        </nav>
+        </nav> 
     )
 }
 
