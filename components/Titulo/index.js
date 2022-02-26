@@ -76,7 +76,7 @@ function Titulo({
           <button
             onClick={handleMostrarSobre}
             className={`${style.btns_mostrar}`}>
-             sobre mim
+             Sobre mim
             <Image 
               src={mostrarSobre ? seta1 : seta2} 
               alt={mostrarSobre ? 'Mostrar' : 'Esconder'} 
