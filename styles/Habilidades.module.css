@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     color: #fff;
-    width: 90%;
+    width: 100%;
     min-height:40vh;
 }
   
@@ -19,62 +19,62 @@
   display: flex;
   align-items:center;
   justify-content:center;
-  width: 100%;
+  width: 80rem;
   padding: 1rem;
   gap: 2rem;
 }
 
+
 .habilidades_image_filho {
-  width: 9rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.habilidades_image_filho img {
+  width: 10rem;
   padding: 0.8rem;
   box-shadow: 0.2rem 0.2rem 0.2rem 0.3rem rgb(41, 20, 231);
   border-radius: 1rem;
 }
 
-.habilidades_image_filho:hover {
+.habilidades_image_filho img:hover {
   transform: scale(1.1); 
   box-shadow: 0.2rem 0.2rem 0.2rem 0.4rem rgb(41, 20, 231);
 }
   
 @media (max-width: 860px) {
   .habilidades_image_pai {
-    width: 70%;
+    width: 70rem;
     gap: 1.5rem;
   }
 
   .habilidades_image_filho {
+    gap: 1.5rem;
+  }
+
+  .habilidades_image_filho img {
     width: 8rem;
   }
 
 }
 
-@media (max-width: 720px) {
+@media (max-width: 700px) {
   .conteiner_habilidades h1 {
     font-size: 4.6rem;
   }
 
   .habilidades_image_pai {
-    width: 50%;
-    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    flex-direction:column;
+    gap: 4rem;
   }
 
   .habilidades_image_filho {
-    width: 7.5rem;
+    gap: 3.5rem;
   }
 
-}
-
-@media (max-width: 590px) {
-  .conteiner_habilidades h1 {
-    font-size: 4.6rem;
-  }
-
-  .habilidades_image_pai {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .habilidades_image_filho {
-    width: 10rem;
+  .habilidades_image_filho img {
+    width: 14rem;
   }
 }
