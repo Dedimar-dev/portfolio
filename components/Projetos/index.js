@@ -141,7 +141,7 @@ function Projetos() {
                         >
                             <div className={style.div_imagem_projeto}>
                                 <Image
-                                    width={700}
+                                    width={1000}
                                     height={425}
                                     src={projeto.imagem}
                                     alt="Imagem-Projeto"
