@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import dedimar from '../../public/dedimar.jpg';
+import dedimar from '../../public/dedimar.jpeg';
 import style from '../../styles/Sobre.module.css';
+import Link from 'react-scroll/modules/components/Link';
 
 function Sobre() {
     return(
@@ -14,8 +15,8 @@ function Sobre() {
                 <Image 
                     className={style.apresentacao_image_filho}
                     src={dedimar} 
-                    width={400} 
-                    height={400} 
+                    width={350} 
+                    height={450} 
                     alt="Dedimar"
                 />
             </div>

@@ -28,9 +28,9 @@
 .apresentacao_image_pai {
   display: flex;
   align-items: center;
-  width: 30%;
+  width: 25%;
   border-radius: 50% ;
-  border:  20px solid #040929;
+  border:  0.5rem solid #141736;
 }
 
 .apresentacao_image_filho {
