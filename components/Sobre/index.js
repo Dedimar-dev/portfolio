@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import dedimar from '../../public/dedimar.jpeg';
+import dedimar from '../../public/Dedimar.jpeg';
 import style from '../../styles/Sobre.module.css';
 import Link from 'react-scroll/modules/components/Link';
 
