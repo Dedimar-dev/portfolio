@@ -29,12 +29,12 @@
   display: flex;
   align-items: center;
   width: 30%;
-  border-radius: 50% ;
+  border-radius: 50%;
   background-image: url('../public/Dedimar.jpeg');
   height: 50rem;
   background-size: 80%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: top;
   margin-bottom: 6rem;
 }
 
@@ -58,6 +58,12 @@
     width: 90%;
     line-height: 3rem;
   }
+
+  .apresentacao_image{
+    background-size: cover; 
+    border-radius: 40%;
+    margin-bottom: 0;
+  }
   
 }
 
@@ -68,9 +74,17 @@
     white-space:pre-line;
   }
 
-  .apresentacao_image_pai {
-    display: none;
+  .apresentacao_image{
+    background-size: cover;
+    width: 50%;
     
+  }
+  
+}
+
+@media (max-width: 572px) {
+  .apresentacao_image{ 
+    width: 70%;  
   }
   
   
@@ -87,5 +101,10 @@
     font-size: 4rem;
     text-align: left;
   }
+
+  .apresentacao_image{ 
+    width: 90%;  
+  }
+  
   
 }
