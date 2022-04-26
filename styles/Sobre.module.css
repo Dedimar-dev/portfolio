@@ -25,16 +25,17 @@
     gap: 6rem;
 }
 
-.apresentacao_image_pai {
+.apresentacao_image {
   display: flex;
   align-items: center;
-  width: 25%;
+  width: 30%;
   border-radius: 50% ;
-  border:  0.5rem solid #141736;
-}
-
-.apresentacao_image_filho {
-  border-radius: 50%;
+  background-image: url('../public/Dedimar.jpeg');
+  height: 50rem;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-bottom: 6rem;
 }
 
 .apresentacao p {

@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import dedimar from '../../public/Dedimar.jpeg';
 import style from '../../styles/Sobre.module.css';
-import Link from 'react-scroll/modules/components/Link';
 
 function Sobre() {
+
     return(
         <section className={style.conteiner_2}>
         <h1 className={style.titulo_sobre_mim}>
@@ -11,14 +11,8 @@ function Sobre() {
         </h1>
        
         <div className={style.apresentacao}>
-            <div className={style.apresentacao_image_pai} >
-                <Image 
-                    className={style.apresentacao_image_filho}
-                    src={dedimar} 
-                    width={350} 
-                    height={450} 
-                    alt="Dedimar"
-                />
+            <div className={style.apresentacao_image}>
+    
             </div>
             
             <p>
@@ -33,6 +27,7 @@ function Sobre() {
                 tecnologia, tornar o mundo um lugar melhor.
             </p>
         </div>
+       
     </section>
     )
 }
