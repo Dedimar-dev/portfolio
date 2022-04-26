@@ -27,10 +27,7 @@ button {
 }
 
 body {
- 
-  background: linear-gradient(#0f1237e6,#0f122d);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background: #101731;
 }
 
 body::-webkit-scrollbar {
