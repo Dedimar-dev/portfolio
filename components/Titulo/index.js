@@ -7,6 +7,7 @@ import seta2 from '../../public/Polygon5.svg';
 import style from '../../styles/Titulo.module.css';
 import Typical from 'react-typical';
 import useGlobal from '../../hooks/useGlobal';
+import SimboloPDF from '../../public/ficheiro-pdf.png';
 
 function Titulo({
   handleMostrarSobre,
@@ -71,7 +72,7 @@ function Titulo({
             steps={['Full Stack Developer', 1000]}
           />
         </div>
-
+      
         <span className={style.span_btn_mostrar}>
           <button
             onClick={handleMostrarSobre}
@@ -100,6 +101,20 @@ function Titulo({
               alt={mostrarHabilidades ? 'Mostrar' : 'Esconder'} 
             />
           </button>
+          <span>
+            <a  className={style.curriculo}
+                href="https://drive.google.com/file/d/1vXihi0LzB__e0BC1LJQojsGoXw9Ls64c/view?usp=sharing"
+                target="_brank"
+            >
+              Currículo
+               <Image 
+                width={40} 
+                height={40} 
+                src={SimboloPDF} 
+                alt="SimboloPDF" 
+              />
+            </a>
+        </span>
         </span>
       </div>
     </div>

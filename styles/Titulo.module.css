@@ -43,7 +43,7 @@
     border-radius: 0.3rem; 
     cursor: pointer;
     width: 25rem; 
-    height: 45px;
+    height: 4.5rem;
     padding: 2rem;
 }
 
@@ -51,6 +51,18 @@
 .btns_mostrar:hover {
     background-color:steelblue;
 }
+
+.curriculo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25rem;
+    height: 4.5rem;
+    background-color: rgb(31, 92, 141);
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+  }
 
 @media (max-width: 1250px) {
    
@@ -84,7 +96,8 @@
         flex-direction: column;
     }
 
-    .btns_mostrar {
+    .btns_mostrar,
+    .curriculo  {
         width: 60%;
     }
       
@@ -121,7 +134,8 @@
         font-size: 2.5rem;
     }
 
-    .btns_mostrar {
+    .btns_mostrar,
+    .curriculo  {
         width: 100%;
     }
  
