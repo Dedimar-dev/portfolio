@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import dedimar from '../../public/Dedimar.jpeg';
 import style from '../../styles/Sobre.module.css';
 
 function Sobre() {
@@ -27,7 +25,6 @@ function Sobre() {
                 tecnologia, tornar o mundo um lugar melhor.
             </p>
         </div>
-       
     </section>
     )
 }
