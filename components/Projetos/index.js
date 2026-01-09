@@ -141,7 +141,7 @@ function Projetos() {
                         >
                             <div className={style.div_imagem_projeto}>
                                 <Image
-                                    width={1000}
+                                    width={700}
                                     height={425}
                                     src={projeto.imagem}
                                     alt="Imagem-Projeto"
@@ -153,12 +153,12 @@ function Projetos() {
                                 <p>{projeto.descricao}</p>
                                 <div>
                                 { projeto.site &&  
-                                    <Link href={projeto.site}>
-                                        <a target={'_blank'}>Ver Site</a>
+                                    <Link href={projeto.site} target={'_blank'}>
+                                        Ver Site
                                     </Link>
                                 }
-                                    <Link href={projeto.github}>
-                                        <a target={'_blank'}>Ver no GitHub</a>
+                                    <Link href={projeto.github} target={'_blank'}>
+                                        Ver no GitHub
                                     </Link>
                                 </div>
                                 <p>{projeto.tecnologias}</p>
