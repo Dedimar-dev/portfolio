@@ -76,6 +76,7 @@ function Titulo({
             wrapper="span"
             speed={50}
             repeat={Infinity}
+            className={style.fontePersonalizada}
           />
         </div>
       
