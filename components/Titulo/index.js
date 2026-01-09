@@ -5,7 +5,8 @@ import linkedin_light from '../../public/linkedin-light.svg';
 import seta1 from '../../public/Polygon3.svg';
 import seta2 from '../../public/Polygon5.svg';
 import style from '../../styles/Titulo.module.css';
-import Typical from 'react-typical';
+//import typical from 'react-typical';
+import { TypeAnimation } from 'react-type-animation';
 import useGlobal from '../../hooks/useGlobal';
 import SimboloPDF from '../../public/ficheiro-pdf.png';
 
@@ -67,9 +68,14 @@ function Titulo({
       <div className={style.conteiner_titulo}>
         <div>
           <h1> Olá, eu sou Dedimar Santos!</h1>
-          <Typical
-            loop={Infinity}
-            steps={['Full Stack Developer', 1000]}
+          <TypeAnimation
+            sequence={[
+              'Full Stack Developer', 
+              1000
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
           />
         </div>
       
