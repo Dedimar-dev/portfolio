@@ -33,7 +33,7 @@ function Titulo({
       <nav>
         <ul className="section_list">
           <li>
-            <a href="https://github.com/Dedimar-dev">
+            <a href="https://github.com/Dedimar-dev" target='_blank'>
               <Image 
                 width={30} 
                 height={30} 
@@ -43,7 +43,7 @@ function Titulo({
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/dedimar-santos-3bba211b7/" >
+            <a href="https://www.linkedin.com/in/dedimar-santos-3bba211b7/" target='_blank'>
               <Image 
                 width={30} 
                 height={30} 
@@ -53,7 +53,7 @@ function Titulo({
             </a>
           </li>
           <li>
-            <a href="mailto:santos.dedimar@gmail.com?subject=Olá Dedimar," >
+            <a href="mailto:santos.dedimar@gmail.com?subject=Olá Dedimar," target='_blank'>
               <Image 
                 width={30} 
                 height={30} 
