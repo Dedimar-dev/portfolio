@@ -30,13 +30,13 @@ function Footer({
                 </ul>
             </nav>
             <nav className={style.footer_redes}>
-                <a href="https://github.com/Dedimar-dev" >
+                <a href="https://github.com/Dedimar-dev"  target='_blank'>
                     <Image width={30} height={30} src={ github_light } alt="github" />
                 </a>
-                <a href="https://www.linkedin.com/in/dedimar-santos-3bba211b7/" >
+                <a href="https://www.linkedin.com/in/dedimar-santos-3bba211b7/"  target='_blank'>
                     <Image width={30} height={30} src={ linkedin_light } alt="linkedin" />
                 </a>
-                <a href="mailto:santos.dedimar@gmail.com?subject=Olá Dedimar," >
+                <a href="mailto:santos.dedimar@gmail.com?subject=Olá Dedimar," target='_blank'>
                     <Image width={30} height={30} src={ gmail2 } alt="gemail" />
                 </a>
             </nav>
