@@ -97,8 +97,8 @@ function Projetos() {
             setMin(0);
             return
         }
-        setMax(max += 1);
-        setMin(min += 1);
+        setMax(max + 1);
+        setMin(min + 1);
     }
 
     const handleAnterior = () => {
@@ -107,8 +107,8 @@ function Projetos() {
             setMin(projetos.length - 1);
             return
         }
-        setMax(max -= 1);
-        setMin(min -= 1);
+        setMax(max - 1);
+        setMin(min - 1);
     }
 
     return (
