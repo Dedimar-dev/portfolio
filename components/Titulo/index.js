@@ -110,7 +110,7 @@ function Titulo({
           </button>
           <span>
             <a  className={style.curriculo}
-                href="https://drive.google.com/file/d/1vXihi0LzB__e0BC1LJQojsGoXw9Ls64c/view?usp=sharing"
+                href="https://drive.google.com/file/d/17tFwNTm-YEdG265opc79o7GGEee12I8Z/view?usp=drive_link"
                 target="_brank"
             >
               Currículo
