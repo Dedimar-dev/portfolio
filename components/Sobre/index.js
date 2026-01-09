@@ -4,10 +4,10 @@ function Sobre() {
 
     return(
         <section className={style.conteiner_2}>
-        <h1 className={style.titulo_sobre_mim}>
-            Sobre mim
-        </h1>
-        <div className={style.apresentacao}>
+            <h1 className={style.titulo_sobre_mim}>
+                Sobre mim
+            </h1>
+            <div className={style.apresentacao}>
             <div className={style.apresentacao_image}>
     
             </div>
