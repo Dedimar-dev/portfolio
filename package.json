@@ -9,7 +9,6 @@
     "lint": "next lint",
     "vercel-build": "next build"
   },
-
   "dependencies": {
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.1",
