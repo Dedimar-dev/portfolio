@@ -5,9 +5,8 @@
     font-size: 1.6rem;
     position: fixed;
     top: 0;
-    background-color: rgba(25,2,47,0.2);
+    background-color: rgba(4, 47, 2, 0.2);
     backdrop-filter: blur(2rem);
-    -webkit-backdrop-filter: blur(2rem);
     width: 100%;
     padding: 2rem 15rem;  
     z-index: 1;
