@@ -1,5 +1,6 @@
 import { createContext } from "react";
 import useGlobalProvider from '../hooks/useGlobalProvider';
+import { Analytics } from '@vercel/analytics/next';
 
 const GlobalContext = createContext({});
 
@@ -10,6 +11,7 @@ export function GlobalProvider(props) {
   return (
     <GlobalContext.Provider value={valores}>
       {props.children}
+      <Analytics />
     </GlobalContext.Provider>
   )
 }
