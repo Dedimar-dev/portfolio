@@ -5,7 +5,6 @@ import linkedin_light from '../../public/linkedin-light.svg';
 import seta1 from '../../public/Polygon3.svg';
 import seta2 from '../../public/Polygon5.svg';
 import style from '../../styles/Titulo.module.css';
-//import typical from 'react-typical';
 import { TypeAnimation } from 'react-type-animation';
 import useGlobal from '../../hooks/useGlobal';
 import SimboloPDF from '../../public/ficheiro-pdf.png';
@@ -14,6 +13,7 @@ function Titulo({
   handleMostrarSobre,
   handleMostrarProjetos,
   handleMostrarHabilidades,
+  handleMostrarCertificados
 }) {
 
   const {
@@ -25,7 +25,8 @@ function Titulo({
   const {
     mostrarSobre,
     mostrarProjetos,
-    mostrarHabilidades
+    mostrarHabilidades,
+    mostrarCertificados
   } = mostrarSecao;
 
   return (
@@ -106,6 +107,15 @@ function Titulo({
             <Image 
               src={mostrarHabilidades ? seta1 : seta2} 
               alt={mostrarHabilidades ? 'Mostrar' : 'Esconder'} 
+            />
+          </button>
+          <button
+            onClick={() => handleMostrarCertificados(mostrarCertificados )}
+            className={`${style.btns_mostrar}`}>
+              Certificados
+            <Image 
+              src={mostrarCertificados ? seta1 : seta2} 
+              alt={mostrarCertificados  ? 'Mostrar' : 'Esconder'} 
             />
           </button>
           <span>

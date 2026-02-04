@@ -8,7 +8,8 @@ import style from '../../styles/Footer.module.css';
 function Footer({
     handleMostrarSobre,
     handleMostrarProjetos,
-    handleMostrarHabilidades
+    handleMostrarHabilidades,
+    handleMostrarCertificados
 }) {
     return(
         <footer className={style.footer}>
@@ -26,6 +27,9 @@ function Footer({
                     </li>
                     <li  onClick={handleMostrarHabilidades}>
                         HABILIDADES
+                    </li>
+                    <li  onClick={handleMostrarCertificados}>
+                        CERTIFICADOS
                     </li>
                 </ul>
             </nav>

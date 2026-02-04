@@ -7,7 +7,8 @@ import useGlobal from '../../hooks/useGlobal';
 function Header({
     handleMostrarSobre,
     handleMostrarProjetos,
-    handleMostrarHabilidades
+    handleMostrarHabilidades,
+    handleMostrarCertificados
 }) {
 
     const {
@@ -33,6 +34,9 @@ function Header({
                     </li>
                     <li  onClick={handleMostrarHabilidades}>
                         HABILIDADES
+                    </li>
+                    <li  onClick={handleMostrarCertificados}>
+                        CERTIFICADOS
                     </li>
                 </ul>
             </nav>

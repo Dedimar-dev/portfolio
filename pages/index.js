@@ -6,6 +6,7 @@ import Titulo from '../components/Titulo';
 import Habilidades from '../components/Habilidades';
 import Projetos from '../components/Projetos';
 import MenuLateral from '../components/MenuLateral';
+import Certificados from '../components/Certificados';
 import style from '../styles/Home.module.css';
 import useGlobal from '../hooks/useGlobal';
 
@@ -19,7 +20,8 @@ export default function Home() {
   const {
     mostrarProjetos,
     mostrarHabilidades,
-    mostrarSobre
+    mostrarSobre,
+    mostrarCertificados
   } = mostrarSecao;
 
   const handleMostrarSobre = () => {
@@ -79,32 +81,56 @@ export default function Home() {
     }
   }
 
+  const handleMostrarCertificados = () => {
+
+    if (!mostrarCertificados) {
+      scroll.scrollTo(1000);
+      setMostrarSecao({
+        mostrarCertificados: !mostrarCertificados
+      })
+    }
+
+    if (mostrarCertificados) {
+      scroll.scrollToTop();
+      setTimeout(() => {
+        setMostrarSecao({
+          mostrarCertificados: !mostrarCertificados
+        })
+      }, 1000);
+    }
+  }
+
   return (
     <div className={style.conteiner}>
       <Header
         handleMostrarSobre={handleMostrarSobre}
         handleMostrarProjetos={handleMostrarProjetos}
         handleMostrarHabilidades={handleMostrarHabilidades}
+        handleMostrarCertificados={handleMostrarCertificados}
       />
       <Titulo
         handleMostrarSobre={handleMostrarSobre}
         handleMostrarProjetos={handleMostrarProjetos}
         handleMostrarHabilidades={handleMostrarHabilidades}
+        handleMostrarCertificados={handleMostrarCertificados}
       />
       {mostrarSobre && <Sobre />}
       {mostrarHabilidades && <Habilidades />}
       {mostrarProjetos && <Projetos />}
+      {mostrarCertificados && <Certificados />}
       {open && 
         <MenuLateral 
             handleMostrarSobre={handleMostrarSobre}
             handleMostrarProjetos={handleMostrarProjetos}
             handleMostrarHabilidades={handleMostrarHabilidades}
+            handleMostrarCertificados={handleMostrarCertificados}
         />
       }
       <Footer
         handleMostrarSobre={handleMostrarSobre}
         handleMostrarProjetos={handleMostrarProjetos}
         handleMostrarHabilidades={handleMostrarHabilidades}
+        handleMostrarCertificados={handleMostrarCertificados}
       />
     </div>
   )
